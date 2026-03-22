@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заяц-листопадничек</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f7e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(to right, #8bc34a, #4caf50);
+            color: white;
+            border-bottom: 5px solid #388e3c;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+            background: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        .task {
+            border-left: 4px solid #4caf50;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Приключения зайца-листопадничка</h1>
+            <p>Познакомьтесь с удивительным миром лесного зайца и выполните интересные задания!</p>
+        </header>
+
+        <section>
+            <h2>Кто такой листопадничек?</h2>
+            <img src="https://via.placeholder.com/600x300?text=Заяц-листопадничек" alt="Заяц-листопадничек в лесу">
+            <p>Листопадничек — это зайчонок, который родился осенью, когда с деревьев опадают листья. Именно поэтому его
+                так и называют.</p>
+            <p>Эти маленькие зайчата очень любопытные и смелые. Они исследуют лес, учатся выживать и познают окружающий
+                мир.</p>
+        </section>
+        <p>Листопаднички — это небольшие млекопитающие из отряда грызунов, относящиеся к семейству беличьих. Вот
+            несколько интересных фактов о них:
+
+            Маленькие размеры: Листопаднички — это маленькие зверьки, размер которых часто не превышает 10-15 см в
+            длину. Они имеют длинный хвост, который помогает им поддерживать равновесие.
+
+            Активность ночью: Листопаднички — ночные животные, которые обычно активны в сумерках и ночью, когда они
+            могут безопасно искать пищу и избегать хищников.
+
+            Летучие способности: Некоторые виды листопадничков имеют кожаные складки на боках тела, которые позволяют им
+            планировать между деревьями, подобно летучим мышам. Это помогает им легко перемещаться по лесу, ища пищу.
+
+            Питание: Эти животные являются всеядными, их рацион включает орехи, семена, фрукты, насекомых, а иногда и
+            мелких позвоночных. Осенью они могут запастись пищей на зиму.
+
+            Подготовка к зиме: Листопаднички активно накапливают запасы пищи на зиму. Они прячут орехи и другие
+            съедобные предметы в дуплах деревьев или в других укромных местах.
+
+            Образ жизни: Листопаднички часто строят гнезда на деревьях, где они чувствуют себя в безопасности от
+            наземных хищников. Их гнезда бывают весьма сложными и уютными.
+
+            Гибкость в перемещении: Эти животные легко могут прыгать с ветки на ветку, используя свои острые когти для
+            захвата и удержания на коре деревьев.
+        </p>
+
+        <section>
+            <h2>История листопадничка</h2>
+            <p>Жил-был маленький зайчонок по имени Пушок. Он родился поздней осенью, когда деревья сбрасывали последние
+                листья. Пушок был очень любопытным и хотел узнать, что происходит в лесу зимой.</p>
+            <p>Однажды он решил отправиться в путешествие, чтобы увидеть, как живут другие лесные жители в холодное
+                время года...</p>
+        </section>
+        <P></P>
+
+        <section>
+            <h2>Текстовые задания</h2>
+
+            <div class="task">
+                <h3>Задание 1: Найди отличия</h3>
+                <p>Чем отличается листопадничек от других зайчат? Напиши 3 отличия:</p>
+                <textarea id="task1" rows="4" cols="50" placeholder="Напишите ваш ответ здесь..."></textarea>
+                <button onclick="checkTask1()">Проверить ответ</button>
+                <div id="result1"></div>
+            </div>
+
+            <div class="task">
+                <h3>Задание 2: Составь рассказ</h3>
+                <p>Придумай короткое продолжение истории про Пушка (5–7 предложений):</p>
+                <textarea id="task2" rows="6" cols="50" placeholder="Напишите продолжение истории..."></textarea>
+                <button onclick="checkTask2()">Проверить ответ</button>
+                <div id="result2"></div>
+            </div>
+
+            <div class="task">
+                <h3>Задание 3: Вопросы по тексту</h3>
+                <ol>
+                    <li>Когда родился листопадничек Пушок?</li>
+                    <input type="text" id="q1">
+                    <li>Почему зайчонка назвали листопадничком?</li>
+                    <input type="text" id="q2">
+                    <li>Куда решил отправиться Пушок?</li>
+                    <input type="text" id="q3">
+                </ol>
+                <button onclick="checkTask3()">Проверить ответы</button>
+                <div id="result3"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Интересные факты о зайцах</h2>
+            <ul>
+                <li>Зайцы меняют цвет шерсти два раза в год.</li>
+                <li>Их задние лапы намного длиннее передних, что помогает им прыгать.</li>
+                <li>Зайчата рождаются зрячими и покрытыми мехом.</li>
+                <li>В природе зайцы живут около 5–8 лет.</li>
+            </ul>
+        </section>
+        <P>стихотворение</P>
+        <P>Дрожат от холода зайчата
+            В промозглой вымокшей траве,
+            Мамаша сгинула куда-то
+            И не найти её нигде.
+
+            Друг к другу тесно прижимаясь,
+            Тихонько плачут ни о чем,
+            Над ними облако рыдает
+            Осенним горестным дождем.
+
+            В лесу зайчиха пробегала,
+            Она чужая им была,
+            Бедняжек серых увидала,
+            Их накормила... и ушла.
+            (Елена Наговицына)
+
+            Автор: Юлия Скоринова</P>
+
+        <footer>
+            <p>© 2024 Сайт про зайца-листопадничка. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script>
+        function checkTask1() {
+            const answer = document.getElementById('task1').value.toLowerCase();
+            const result = document.getElementById('result1');
+            if (answer.includes('осень') && answer.includes('листья') && (answer.includes('любопытный') || answer.includes('смелый'))) {
+                result.innerHTML = '<p style="color: green;">Отлично! Вы правильно отметили основные отличия.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">Попробуйте ещё раз! Подумайте о времени рождения и характере листопадничка.</p>';
+            }
+        }
+
+        function checkTask2() {
+            const answer = document.getElementById('task2').value;
+            const result = document.getElementById('result2');
+            if (answer.length > 50) {
+                result.innerHTML = '<p style="color: green;">Замечательное продолжение! Вы хорошо раскрыли историю Пушка.</p>';
+            } else {
+                result.innerHTML = '<p style="color: red;">Рассказ получился слишком коротким. Добавьте ещё деталей!</p>';
+            }
+        }
+
+        function checkTask3() {
+            const q1 = document.getElementById('q1').value.toLowerCase();
+            const q2 = document.getElementById('q2').value.toLowerCase();
+            const q3 = document.getElementById('q3').value.toLowerCase();
+            const result = document.getElementById('result3');
+
+            let score = 0;
+            let feedback = '';
+
+            if (q1.includes('осень') || q1.includes('поздней осенью')) score++;
+            else feedback += 'На вопрос 1 ответ неверный. ';
+
+            if (q2.includes('листья') || q2.includes('опадают листья')) score++;
+            else feedback += 'На вопрос 2 ответ неверный. ';
+
+            if (q3.includes('путешествие') || q3.includes('в путешествие')) score++;
+            else feedback += 'На вопрос 3 ответ неверный. ';
+
+            if (score === 3) {
+                result.innerHTML = '<p style="color: green;">Отлично! Все ответы правильные!</p>';
+            } else {
+                result.innerHTML = `<p style="color: orange;">Правильно ${score} из 3. ${feedback}</p>`;
+            }
+        }
+    </script>
+</body>
+
+</html>
